@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import Helper.PostMethod;
+import Helper.PutClass;
 import io.cucumber.java.en.Then;
 
 import static Components.IdDataHelper.*;
@@ -11,6 +11,6 @@ public class UpdateClass {
     public static String updateCardPath = "cards/"+cardId;
     @Then("UPDATE CARD1")
     public static void update_card1() {
-        PostMethod.postCard(cardNameOne,cardNameOneUpdateDesc,updateCardPath);
+        PutClass.putCard(cardNameOne,cardNameOneUpdateDesc,updateCardPath);
     }
 }
